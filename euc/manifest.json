@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "domain": "euc",
   "name": "EUC",
   "documentation": "https://www.home-assistant.io/components/hue",
