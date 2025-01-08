@@ -10,7 +10,7 @@ Integration works with wheels supported by python euc library - KingSong only
 
 Working bluez bluetooth stack (over DBUS). You can verify if it works by manual installation of python libraries and running:
 ```
-pip install euc.kingsong  # other backends supported by WheelLog should be available soon
+pip install git+https://github.com/moleus/euc-kingsong-lib.git@main
 python -m euc.cli
 ```
 Above command should connect to nearby wheel and start displaying data.

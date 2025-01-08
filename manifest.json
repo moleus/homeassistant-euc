@@ -1,12 +1,12 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "domain": "euc",
   "name": "EUC",
-  "documentation": "https://www.home-assistant.io/components/hue",
+  "documentation": "https://github.com/moleus/homeassistant-euc",
   "dependencies": [],
-  "codeowners": ["@mrk"],
+  "codeowners": ["@moleus"],
   "requirements": [
-        "git+https://github.com/moleus/euc-kingsong-lib.git@0.3.0",
+        "git+https://github.com/moleus/euc-kingsong-lib.git@0.3.1",
         "git+https://github.com/moleus/euc-lib.git@0.3.0"
     ],
   "config_flow": true
