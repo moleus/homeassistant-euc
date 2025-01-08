@@ -4,7 +4,8 @@ import ravel
 import euc.device
 import euc.utils
 
-from homeassistant.core import Config, HomeAssistant
+from homeassistant.core import HomeAssistant
+from homeassistant.core_config import Config
 from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.const import CONF_NAME
 from .const import DOMAIN, DEVICE_INSTANCE

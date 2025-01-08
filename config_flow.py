@@ -51,7 +51,8 @@ class EUCFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
         if not system_bus.connection.loop:
             system_bus.attach_asyncio(asyncio.get_event_loop())
         devices = await euc.device.get_devices(system_bus)
-        driver_names = [name for name, _ in euc.device.get_device_drivers()]
+        drivers = await asyncio.to_thread(euc.device.get_device_drivers)
+        driver_names = [name for name, _ in drivers]
 
         return self._show_config_form(
             name=DEFAULT_NAME,
