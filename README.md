@@ -4,7 +4,7 @@ Homeassistant custom component for Electric Unicycles integration
 
 ## Supported wheels
 
-Integration works with wheels supported by python euc library - currently KingSong only, but other wheels should appear soon.
+Integration works with wheels supported by python euc library - KingSong only
 
 ## Prerequisites
 
@@ -17,6 +17,12 @@ Above command should connect to nearby wheel and start displaying data.
 
 ## Instalation
 
-Place directory **euc** in custom_components directory of your HASS installation (or create symlink **custom_components/euc** pointing to euc directory of cloned repository). In homeassistant go to Configuration / Integrations page and search for "Electric Unicycle" integration. After adding integration new sensors of basic wheel parameters should be visible.
+1. Clone repo into custom_components folder
+    ```sh
+    cd custom_components
+    git clone https://github.com/moleus/homeassistant-euc.git euc
+    ```
 
-Currently integration is read-only (only sensors are available), but rw access is also planned.
+2. In homeassistant go to Configuration / Integrations page and search for "Electric Unicycle" integration. After adding integration new sensors of basic wheel parameters should be visible.
+
+Integration is read-only (only sensors are available)
