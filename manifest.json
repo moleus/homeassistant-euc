@@ -7,7 +7,7 @@
   "codeowners": ["@mrk"],
   "requirements": [
         "git+https://github.com/moleus/euc-kingsong-lib.git@0.3.0#egg=euc.kingsong",
-        "git+https://github.com/moleus/euc-lib.git@0.3.0#egg=euc",
+        "git+https://github.com/moleus/euc-lib.git@0.3.0#egg=euc"
     ],
   "config_flow": true
 }
