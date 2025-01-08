@@ -6,7 +6,7 @@
   "dependencies": [],
   "codeowners": ["@moleus"],
   "requirements": [
-        "git+https://github.com/moleus/euc-kingsong-lib.git@0.3.1",
+        "git+https://github.com/moleus/euc-kingsong-lib.git@0.3.5",
         "git+https://github.com/moleus/euc-lib.git@0.3.0"
     ],
   "config_flow": true
