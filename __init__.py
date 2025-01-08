@@ -35,7 +35,5 @@ async def async_setup_entry(hass, config_entry):
     hass.data[DOMAIN][DEVICE_INSTANCE][config_entry.entry_id] = device
     euc.utils.create_task(device.run())
     _LOGGER.info("device %r is running", config_entry.data[CONF_NAME])
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(config_entry, "sensor")
-    )
+    await hass.config_entries.async_forward_entry_setup(config_entry, "sensor")
     return True
